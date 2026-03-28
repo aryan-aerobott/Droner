@@ -90,9 +90,9 @@ WSGI_APPLICATION = "config.wsgi.application"
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'aerobott_db',
-        'USER': 'aerobott',
-        'PASSWORD': 'aerobott123',
+        'NAME': 'vaishya_db',
+        'USER': 'editing',
+        'PASSWORD': 'vaishya123',
         'HOST': 'localhost',
         'PORT': '5432',
     }
@@ -188,3 +188,9 @@ WAGTAILADMIN_BASE_URL = "http://example.com"
 # if untrusted users are allowed to upload files -
 # see https://docs.wagtail.org/en/stable/advanced_topics/deploying.html#user-uploaded-files
 WAGTAILDOCS_EXTENSIONS = ['csv', 'docx', 'key', 'odt', 'pdf', 'pptx', 'rtf', 'txt', 'xlsx', 'zip']
+
+ALLOWED_HOSTS = ["127.0.0.1", "localhost", "vaishyastartupfoundation.com"]
+
+WAGTAIL_SITE_NAME = "Vaishya Startup Foundation"
+
+WAGTAILADMIN_BASE_URL = "http://127.0.0.1:8000"
