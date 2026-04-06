@@ -1,2 +1,2 @@
-# vaishya-wagtail
-Vaishya community wagtail
+# DronerX
+DronerX

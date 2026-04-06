@@ -12,9 +12,8 @@ from wagtail.api.v2.router import WagtailAPIRouter
 from search import views as search_views
 
 
-# -----------------------
 # Wagtail API Router
-# -----------------------
+
 api_router = WagtailAPIRouter("wagtailapi")
 
 api_router.register_endpoint("pages", PagesAPIViewSet)
@@ -26,7 +25,7 @@ urlpatterns = [
     path("documents/", include(wagtaildocs_urls)),
     path("search/", search_views.search, name="search"),
 
-    # ✅ API endpoint
+    #  API endpoint
     path("api/v2/", api_router.urls),
 ]
 
