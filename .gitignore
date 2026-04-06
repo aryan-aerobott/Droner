@@ -1,21 +1,51 @@
-# Python cache
+# ----------------------------
+# Python
+# ----------------------------
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
+*.pyd
 
-# Virtual environment
+# ----------------------------
+# Virtual Environment
+# ----------------------------
 venv/
+env/
+ENV/
+.venv/
 
-# Database
+# ----------------------------
+# Django
+# ----------------------------
 db.sqlite3
-
-# Media uploads
+db.sqlite3-journal
+*.log
 media/
-
-# Static files (optional)
+staticfiles/
 static/
 
+# ----------------------------
 # Environment variables
+# ----------------------------
 .env
+.env.*
 
-# Mac system files
+# ----------------------------
+# IDE / OS
+# ----------------------------
+.vscode/
+.idea/
 .DS_Store
+Thumbs.db
+
+# ----------------------------
+# Build / distributions
+# ----------------------------
+build/
+dist/
+*.egg-info/
+
+# ----------------------------
+# Wagtail
+# ----------------------------
+.wagtail-cache/
